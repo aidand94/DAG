@@ -77,8 +77,10 @@ public class DAG {
         nodes2.get(2).addEdge(nodes2.get(4));
         nodes1.get(4).addEdge(nodes1.get(0));
 
-        System.out.println(isDag(nodes1));
-        System.out.println(isDag(nodes2));
+        System.out.println("Checking whether graph A:{1,2},{1,3},{1,4},{3,4},{3,5},{5,1} is a DAG");
+        System.out.println("Checking whether graph B:{1,2},{1,3},{1,4},{3,4},{3,5} is a DAG");
+        System.out.println("Is graph A is a DAG?" + isDag(nodes1));
+        System.out.println("Is graph B is a DAG?" + isDag(nodes2));
 
     }
 }
